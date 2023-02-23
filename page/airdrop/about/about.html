@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    
+    
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>🔴 Optimism dashboard</title>  <!--#change the title of the page-->
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+            <style>
+                 td, th {
+                 text-align: center;
+                 border: 1px solid;  
+                }
+                
+                table {
+                    margin-top: 30px ;
+                  width: 100%;
+                  border-collapse: collapse;
+                  border: 1px solid;  
+                }
+            </style>
+    
+  </head>
+  
+  
+  <body>
+      
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="https://www.optimism.io/"> <!--#change-->
+                <h2 style="background:-webkit-linear-gradient(#fb93a4,#fa0303 );
+                -webkit-background-clip:text;-webkit-text-fill-color:transparent">Optimism</h2><!--#change--> 
+            </a><!--#change brand link and title-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>  <!--#change-->
+                </li>
+    
+                <li class="nav-item active">
+                        <a class="nav-link" href="page/referrence/about.html">Resource</a>  <!--#change-->
+                </li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu 
+
+
+                </button>
+                <ul class="dropdown-menu" style="border-bottom-right-radius: 5%; border: 3px solid #2e3a46; ">
+                  <li><a href="page/tokenomics/about.html" class="dropdown-item side" style="font-weight:bold ;">Tokennomics</a></li>
+                  <li><a href="page/team/about.html" class="dropdown-item side" style="font-weight:bold ;">Team</a></li>
+                  <li class="dropdown-item sides">
+                    <p  style="font-weight:bold ; color :#2e3a46; padding-left: 30px;"class="d-block">Airdrop</p>
+                    <ol class="sub-menu">
+                        <li class="collapse show side"><a href="page/airdrop/airdrop1/airdrop1.html" style=" color :#2e3a46;" >First round</a></li>
+                        <li class="collapse show side"><a href="page/airdrop/airdrop2/airdrop2.html"style=" color :#2e3a46;" >Second round</a></li>
+                    </ol>
+        </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    <div class="footer-basic">
+        <footer >
+            <div class="social">
+                    <a  target="_blank" href="https://github.com/lordking1234"><i class="icon ion-social-github"></i></a>  <!--#change link -->
+                    <a  target="_blank" href="https://twitter.com/MRSoltanii"><i class="icon ion-social-twitter"></i></a>  <!--#change link-->
+                    <a  target="_blank" href="https://www.linkedin.com/in/mohammad-reza-soltani-62009523b/"><i class="icon ion-social-linkedin"></i></a>  <!--#change link-->
+             </div>
+             <ul class="list-inline">
+                    <li class="list-inline-item"><a  target="_blank" href="https://flipsidecrypto.xyz/">Flipside </a></li><!--#change link & text-->
+                    <li class="list-inline-item"><a  target="_blank" href="https://metricsdao.xyz/">Metrics dao</a></li><!--#change link & text-->
+                    <li class="list-inline-item"><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Buy me a coffee 🍵
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><p class="dropdown-item" style="font-weight:bold ; ">Thanks you 💗</p></li>
+                          <li><p class="dropdown-item">
+                            <button onclick="myFunction()" style ="border: none; font-weight:400 ; ">
+                                  Click to copy metamask address <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                    </svg>
+                            </button>
+                        </ul>
+                      </div></li><!--#change link & text-->
+             </ul>
+             <p class="copyright">Built by Lordking 👑</p> <!--#change-->
+        </footer>
+    </div>
+</footer>    
+<!--copy to clipbord-->
+                    <input type="text" value="0x7af2d9a872cbb1bc19fcbd75a4241776ab63dcca" id="myInput" style="visibility :hidden">
+                    <script>
+                                function myFunction() {
+                                var copyText = document.getElementById("myInput");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999); 
+                                navigator.clipboard.writeText(copyText.value);
+                                }
+                    </script>
+
+
+
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="about.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+         <script src="about.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    
+    
+  </body>
+</html> 

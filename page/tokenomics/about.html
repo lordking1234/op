@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+    
+    
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>🔴 Optimism dashboard</title>  <!--#change the title of the page-->
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+            <style>
+                 td, th {
+                 text-align: center;
+                 border: 1px solid;  
+                 box-shadow:0 0 20px rgba(0, 0, 0, 0.15)
+                }
+                
+                table {
+                    margin-top: 30px ;
+                  width: 100%;
+                  border-collapse: collapse;
+                  border: 1px solid; 
+                  border-collapse:collapse;font-size:0.9em;font-family:sans-serif
+                }
+            </style>
+    
+  </head>
+  
+  
+  <body>
+      
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="https://www.optimism.io/"> <!--#change-->
+                <h2 style="background:-webkit-linear-gradient(#fb93a4,#fa0303 );
+                -webkit-background-clip:text;-webkit-text-fill-color:transparent">Optimism</h2><!--#change--> 
+            </a><!--#change brand link and title-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>  <!--#change-->
+                </li>
+
+                <li class="nav-item active">
+                        <a class="nav-link" href="page/referrence/about.html">Resource</a>  <!--#change-->
+                </li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu 
+
+
+                </button>
+                <ul class="dropdown-menu" style="border-bottom-right-radius: 5%; border: 3px solid #2e3a46; ">
+                  <li><a href="page/tokenomics/about.html" class="dropdown-item side" style="font-weight:bold ;">Tokennomics</a></li>
+                  <li><a href="page/team/about.html" class="dropdown-item side" style="font-weight:bold ;">Team</a></li>
+                  <li class="dropdown-item sides">
+                    <p  style="font-weight:bold ; color :#2e3a46; padding-left: 30px;"class="d-block">Airdrop</p>
+                    <ol class="sub-menu">
+                        <li class="collapse show side"><a href="page/airdrop/airdrop1/airdrop1.html" style=" color :#2e3a46;" >First round</a></li>
+                        <li class="collapse show side"><a href="page/airdrop/airdrop2/airdrop2.html"style=" color :#2e3a46;" >Second round</a></li>
+                    </ol>
+        </ul>
+            </div>
+        </div>
+
+ 
+
+    </nav>
+<raw>
+    <div  class="container-8"><img src="https://zerocap.com/wp-content/uploads/2021/03/OPTIMISM.jpg" style="width: 80% ; height:400px;padding-left: 100px ; padding-top: 100px ; border-radius: 15%;" ></div>
+</raw>
+
+<!-- Page Content -->
+    <section class="py-5">
+            <div class="container">
+                <div class="raw">
+                  <div class="col-md-12 mb-4">
+                    <div class="card-header shadow py-3">
+                        <h6 class="m-0 font-weight-bold aa" style="text-align: center;">Allocations</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-pie pt-4 justify-content-between" >
+                           <div id="chart3" style="width: 100%;height:250%;"></div></div>
+                        <code></code> 
+                    </div>
+                </div>
+
+
+
+
+                  <h2 id="Allocations-glance"><a href="#Allocations-glance" class="header-anchor aa mb-5">#</a> Allocations at a glance</h2>
+                   <p><img src="/assets/img/pie2.1015b1b6.jpeg" alt=""></p> 
+                  <table><thead><tr><th>Category</th> <th>Percentage</th> <th>Description</th></tr></thead> <tbody><tr><td>Ecosystem Fund</td> <td>25%</td> <td>The Ecosystem Fund is a proactive program meant to stimulate development in the Collective ecosystem by providing funding to projects and communities</td></tr> <tr><td>Retroactive Public Goods Funding (RetroPGF)</td> <td>20%</td> <td>RetroPGF is the Optimism Collective’s primary mechanism to adequately and reliably <strong>reward</strong> public goods for the impact they provide</td></tr> <tr><td>User airdrops</td> <td>19%</td> <td>A series of airdrops to reward users for specific helpful behaviors, beginning with Airdrop #1</td></tr> <tr><td>Core contributors</td> <td>19%</td> <td>The people who’ve been working tirelessly to bring the Optimism Collective into existence</td></tr> <tr><td>Sugar xaddies</td> <td>17%</td> <td>Investors</td></tr></tbody></table> <h2 id="user-airdrops"><a href="#user-airdrops" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> User Airdrops</h2> <p><em><strong>Allocation: 19%</strong></em></p> <p>The Optimism Foundation will distribute a portion of the OP allocation to members of the Optimism and Ethereum communities in multiple waves.</p> <h3 id="airdrop-1"><a href="#airdrop-1" class="header-anchor  aa mb-2 mt-5">#</a class="aa mb-4 "> Airdrop #1</h3> <p>The first user airdrop will distribute <strong>5%</strong> of the OP token supply.
+                    This airdrop is targeted towards people who:</p> <ul><li>Behave in positive-sum ways.</li> <li>Contribute actively to their communities.</li> <li>Have been priced out of Ethereum.</li></ul> <p>The addresses and amounts were chosen to reward Optimism users, as well as attract core Ethereum users to the OP family.
+                    Airdrop #1 cast a wide net to distribute OP to more than 250k addresses. See the <a href="/docs/governance/airdrop-1.html">Airdrop #1 documentation</a> for a detailed breakdown of eligibility criteria.</p> <h3 id="future-airdrops-2-3"><a href="#future-airdrops-2-3" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Future airdrops (#2, 3, …)</h3> <p>An allocation of <strong>14%</strong> of the OP token supply will be held in reserve for future user airdrops.
+                    As a result of the game-able nature of airdrops, the Optimism Foundation will be responsible for determining airdrop metrics as fairly as possible.
+                    The intent behind airdrops is to distribute them to addresses which positively impact the Optimism community. Participation on governance forums will not be used as a criteria for future airdrops. The best way to improve your odds of receiving future airdrops is to get meaningfully involved!</p> <h2 id="ecosystem-fund"><a href="#ecosystem-fund" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Ecosystem Fund</h2> <p><em><strong>Allocation: 25%</strong></em></p> <p>The Ecosystem Fund is an incentive program designed to stimulate development of the Collective ecosystem.
+                    The Ecosystem Fund will be used to directly fund the communities and companies that drive the expansion of the Collective ecosystem (OPCOs).</p> <p>The allocation dedicated to the Ecosystem Fund is to be further split into the following categories:</p> <ol><li>Governance Fund <strong>(5.4%)</strong></li> <li>Partner Fund <strong>(5.4%)</strong></li> <li>Seed Fund <strong>(5.4%)</strong></li> <li>Unallocated <strong>(8.8%)</strong></li></ol> <p>The Ecosystem Fund is intended to be a kick-starting mechanism that will be phased out entirely once the OP in the fund has been depleted.
+                    The Optimism Foundation expects the function served by the Ecosystem Fund (proactive funding) to eventually be replaced by private third-party investors who can expect to be paid out by the <a href="https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c" target="_blank" rel="noopener noreferrer">Retroactive Public Goods Funding<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> mechanism.</p> <p><img src="/assets/img/ecosystem_fund_process.75f94e93.jpeg" alt=""></p> <p>The wide variety of funding mechanisms ensures that airdrops constantly flow to users who make valuable contributions to the ecosystem.
+                    These contributions result in ecosystem growth,  ecosystem growth results in demand for block space, demand for block space results in revenues, and these revenues are then productively re-deployed into the ecosystem as additional airdrops.</p> <p>Each fund can be thought of as a parallel experiment in OP allocation, enabling rapid iteration and doubling down on what works to further grow the ecosystem.</p> <h3 id="governance-fund"><a href="#governance-fund" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Governance Fund</h3> <p>An allocation of <strong>5.4%</strong> of the OP token supply will be dedicated to the first Governance Fund.
+                    All projects demonstrating usage on Optimism can request tokens from this fund via the <a href="https://foul-porch-0eb.notion.site/Optimism-Grants-Council-090bb648d1854136b9630c608da7a8bc" target="_blank" rel="noopener noreferrer">Optimism Grants Council<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="partner-fund"><a href="#partner-fund" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Partner Fund</h3> <p>An allocation of <strong>5.4%</strong> of the OP token supply will be dedicated to the Partner Fund.
+                    These funds will be distributed strategically by the Optimism Foundation to grow the Optimism ecosystem for the benefit of the entire Collective.</p> <h3 id="seed-fund"><a href="#seed-fund" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Seed Fund</h3> <p>An allocation of <strong>5.4%</strong> of the OP token supply will be dedicated to the Seed Fund, a fund for early stage projects launching in and adjacent to the Optimism ecosystem.</p> <h3 id="unspent-allocation-for-future-growth-programs"><a href="#unspent-allocation-for-future-growth-programs" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Unspent allocation for future growth programs</h3> <p>An allocation of <strong>8.8%</strong> of the OP token supply will be held in reserve for future community growth programs.</p> <h2 id="retroactive-public-goods-funding"><a href="#retroactive-public-goods-funding" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Retroactive Public Goods Funding</h2> <p><em><strong>Allocation: 20%</strong></em></p> <p><a href="https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c" target="_blank" rel="noopener noreferrer">Retroactive Public Goods Funding (RetroPGF)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> will initially be distributed by the <a href="/docs/governance/citizens-house.html">Citizens' House</a>.
+                    RetroPGF rounds are expected to occur on a quarterly basis with the objective of ensuring that all OPCOs are rewarded adequately, appropriately, and reliably based on their impact to the Collective—key to our <a href="https://optimism.io/vision" target="_blank" rel="noopener noreferrer">vision<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>RetroPGF will be funded by several revenue sources:</p> <ol><li>20% of the initial OP token supply held as the “RetroPGF Reserve”.</li> <li>Optimism network transaction fees and sequencer revenue.</li></ol> <p>The Optimism Foundation may choose to increase the total OP payout of any given period by tapping into the 20% RetroPGF Reserve.</p> <h2 id="core-contributors"><a href="#core-contributors" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Core Contributors</h2> <p><em><strong>Allocation: 19%</strong></em></p> <p>The Core Contributors allocation will be distributed to the people who helped bring Optimism and the Optimism Collective from concept to reality, and will continue to pay for development of the protocol.
+                    All tokens distributed as part of the Core Contributors allocation will be subject to a lockup period.</p> <h2 id="sugar-xaddies"><a href="#sugar-xaddies" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Sugar Xaddies</h2> <p><em><strong>Allocation: 17%</strong></em></p> <p>Investors.
+                    They funded us and our crazy vision for the future.
+                    Couldn’t-a done it without ya.
+                    All tokens distributed as part of the Sugar Xaddies allocation will be subject to a lockup period.</p> <h2 id="token-distribution-details"><a href="#token-distribution-details" class="header-anchor aa mb-2 mt-5">#</a class="aa mb-4 "> Token Distribution Details</h2> <p>At genesis there will be an initial total supply of 4,294,967,296 OP tokens.
+                    The total token supply will inflate at a rate of 2% per year.</p> <p>64% of the initial token supply (i.e., the aggregate amount of OP <strong>not</strong> reserved for core contributors or sugar xaddies) will be distributed to the community as described above.
+                    These distributions will be administered over time by the Optimism Foundation in its role as steward of the Optimism Collective.</p> <p>In Year 1, 30% of the initial token supply will be made available to the Foundation for distribution.
+                    After the first year, token holders will vote to determine the Foundation’s annual OP distribution budget.
+                    The Foundation expects to seek the following annual allocations:</p> <ul><li>Year 2: 15% of the initial token supply</li> <li>Year 3: 10% of the initial token supply</li> <li>Year 4: 4% of the initial token supply</li></ul> <p>If the Foundation’s authorized OP expenditures ever reaches below 10% of the initial token supply, it is expected to request an additional allocation.</p> <p>Taken together, the Foundation expects the total supply of unlocked OP tokens to approximate the graph below.</p> <p>Note this graph is for illustration only, and actual unlocked supply will depend on governance and the rate that OP is allocated across user airdrops, the Ecosystem Fund, and RetroPGF.</p> <p><img src="/assets/img/alloc-by-time.e6b3a5e3.png" alt=""></p></div> <!----> <div class="content__content-bottom"></div> <footer class="page-meta"><div class="footer-box"><div class="footer-box-area">
+ 
+                      <div  class="container-8"><img src="https://community.optimism.io/assets/img/alloc-by-time.e6b3a5e3.png" style="width: 80% ; height:400px;margin-left: 10% ;margin-right: 10% ; padding-top: 50px ; border-radius: 15%;" ></div>
+                    </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    <div class="footer-basic">
+        <footer >
+            <div class="social">
+                    <a  target="_blank" href="https://github.com/lordking1234"><i class="icon ion-social-github"></i></a>  <!--#change link -->
+                    <a  target="_blank" href="https://twitter.com/MRSoltanii"><i class="icon ion-social-twitter"></i></a>  <!--#change link-->
+                    <a  target="_blank" href="https://www.linkedin.com/in/mohammad-reza-soltani-62009523b/"><i class="icon ion-social-linkedin"></i></a>  <!--#change link-->
+             </div>
+             <ul class="list-inline">
+                    <li class="list-inline-item"><a  target="_blank" href="https://flipsidecrypto.xyz/">Flipside </a></li><!--#change link & text-->
+                    <li class="list-inline-item"><a  target="_blank" href="https://metricsdao.xyz/">Metrics dao</a></li><!--#change link & text-->
+                    <li class="list-inline-item"><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Buy me a coffee 🍵
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><p class="dropdown-item" style="font-weight:bold ; ">Thanks you 💗</p></li>
+                          <li><p class="dropdown-item">
+                            <button onclick="myFunction()" style ="border: none; font-weight:400 ; ">
+                                  Click to copy metamask address <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                    </svg>
+                            </button>
+                        </ul>
+                      </div></li><!--#change link & text-->
+             </ul>
+             <p class="copyright">Built by Lordking 👑</p> <!--#change-->
+        </footer>
+    </div>
+</footer>    
+<!--copy to clipbord-->
+                    <input type="text" value="0x7af2d9a872cbb1bc19fcbd75a4241776ab63dcca" id="myInput" style="visibility :hidden">
+                    <script>
+                                function myFunction() {
+                                var copyText = document.getElementById("myInput");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999); 
+                                navigator.clipboard.writeText(copyText.value);
+                                }
+                    </script>
+
+
+
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="about.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+         <script src="about.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    
+    
+  </body>
+</html> 

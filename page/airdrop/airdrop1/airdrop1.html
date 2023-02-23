@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+    
+    
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>🔴 Optimism dashboard</title>  <!--#change the title of the page-->
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+            <style>
+                td, th {
+                text-align: center;
+                border: 1px solid;  
+               }
+               
+               table {
+                   margin-top: 30px ;
+                 width: 100%;
+                 border-collapse: collapse;
+                 border: 1px solid;  
+               }
+           </style>
+    
+  </head>
+  
+  
+  <body>
+      
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand" href="https://www.optimism.io/"> <!--#change-->
+                <h2 style="background:-webkit-linear-gradient(#fb93a4,#fa0303 );
+                -webkit-background-clip:text;-webkit-text-fill-color:transparent">Optimism</h2><!--#change--> 
+            </a><!--#change brand link and title-->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>  <!--#change-->
+                    </li>
+   
+                    <li class="nav-item active">
+                            <a class="nav-link" href="page/referrence/about.html">Resource</a>  <!--#change-->
+                    </li>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu 
+ 
+
+                    </button>
+                    <ul class="dropdown-menu" style="border-bottom-right-radius: 5%; border: 3px solid #2e3a46; ">
+                      <li><a href="page/tokenomics/about.html" class="dropdown-item side" style="font-weight:bold ;">Tokennomics</a></li>
+                      <li><a href="page/team/about.html" class="dropdown-item side" style="font-weight:bold ;">Team</a></li>
+                      <li class="dropdown-item sides">
+                        <p  style="font-weight:bold ; color :#2e3a46; padding-left: 30px;"class="d-block">Airdrop</p>
+                        <ol class="sub-menu">
+                            <li class="collapse show side"><a href="page/airdrop/airdrop1/airdrop1.html" style=" color :#2e3a46;" >First round</a></li>
+                            <li class="collapse show side"><a href="page/airdrop/airdrop2/airdrop2.html"style=" color :#2e3a46;" >Second round</a></li>
+                        </ol>
+            </ul>
+            </div>
+        </div>
+
+ 
+
+    </nav>
+
+
+    <div  class="container-lg-10"><img src="C:\Users\LEGION\Downloads\pL24uti.png" style="width: 90% ; height:300px;padding-top: 100px ; " ></div>
+
+
+<!-- Page Content -->
+    <section class="py-5">
+            <div class="container">
+                <div class="raw">
+                <h1 class="fw-light aa " style="font-weight: bold;">First Round of Optimism </h1> <!--#change-->
+                <p class="lead"><a href="https://community.optimism.io/docs/governance/airdrop-1/#active-ethereum-participants" target="_blank"> check here for more information</a>!</p>
+                
+            </div>
+    </section>
+
+      
+
+
+
+
+<!-- Page Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="raw">
+        <h1 class="fw-light" style="font-weight: bold;"> 🅱️ackground</h1> <!--#change-->
+        <p class="">The Optimism Foundation’s <code>Airdrop #1</code> rewards those who have been instrumental as early adopters and active users of projects in the Optimism ecosystem. In total, <code>248,699 addresses are eligible</code> to claim OP in this initial airdrop. <a href="https://community.optimism.io/docs/governance/airdrop-1/#" target="_blank"> check here for more information</a>!</p>
+        <p class="">OP airdrop has six sets of criteria. Two for Optimism users that target early adopters and active project users, and four for L1 Ethereum, which target active contribution, positive-sum behaviors, and active participation. Each set is distinct, meaning that an address can be eligible for multiple and allocated a sum of tokens accordingly. A <code>snapshot</code> of addresses was taken on<code> 03-25-2022 0:00 UTC</code>. The allocations and criteria break down as follows:
+        </p>
+
+        <table style=" border-collapse:collapse;font-size:0.9em;font-family:sans-serif">
+        <thead>
+            <tr style="box-shadow:0 0 20px rgba(0, 0, 0, 0.15)">
+              <th><code>Name</code></th>
+              <th><code># of Addresses Eligible</code></th>
+              <th><code>OP Allocated per Address</code></th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Optimism Users</td>
+              <td>92,157</td>
+              <td>776.86</td>
+            </tr>
+            <tr>
+              <td>Repeat Optimism Users*</td>
+              <td>19,174</td>
+              <td>1,692.49</td>
+            </tr>
+            <tr>
+              <td>DAO Voters</td>
+              <td>84,015</td>
+              <td>271.83</td>
+            </tr>  
+            <tr>
+              <td>Multisig Signers</td>
+              <td>19,542</td>
+              <td>1,190.26</td>
+            </tr>     
+            <tr>
+              <td>Gitcoin Donors (on L1)</td>
+              <td>23,925</td>
+              <td>555.92</td>
+            </tr>            
+            <tr>
+              <td>Users Priced Out of Ethereum</td>
+              <td>74,272</td>
+              <td>409.42</td>
+            </tr>                 
+        </tbody>
+        </table>
+
+
+        <h1 class="fw-light" style="font-weight: bold;margin-top: 60px;"> ⭕ptimism Early Adopters</h1> <!--#change-->
+        <p class="">The Foundation sought to identify Optimism users who had actively used applications on Optimism as a part of their crypto experience.</p>
+        <ul style="margin-top: 50px;">
+            <li><p>Optimism Users</p></li>
+            <li><p>Repeat Optimism Users</p></li>
+            <li><p>Active Ethereum Participants</p></li>
+            <ul>
+            <li><code>DAO Voters</code></li>
+            <li><code>Multi-Sig Signers</code></li>
+            <li><code>Gitcoin Donors (on L1)</code></li>
+            <li><code>Users Priced Out of Ethereum</code></li>
+            </ul>  
+        </ul>
+        <p style="margin-top: 50px;">This is Airdrop #1, and <code>14%</code> of the total initial token supply is reserved for future airdrops. </p>
+        <p>OP Token Address: <code>0x4200000000000000000000000000000000000042</code></p>
+
+
+
+    </div>
+</section>
+
+<!--  -->
+                <div class="container-fluid">
+
+                    <h1 class="h3 mb-2  mb-5 text-gray-800">General Information</h1>
+                    <p class="mb-5">In this dashboard we  will analyze the optimism airdrop and its parameters . At first lets take a look at the general informations about the first round of airdrop . </p>
+
+
+
+
+                    <div class="row">
+
+                        <!-- -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card shadow  py-2">
+                                <div class="card-body">
+                                    <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                        Total Claimed OP (USD)</div>
+                                    <div class="h5 mb-0 font-weight-bold "  id ="threethin-box" ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card shadow  py-2">
+                                <div class="card-body">
+                                    <div class="text-xs font-weight-bold aa" style="text-align: center;">Total Users Claimed</div>
+                                            <div class="h5 mb-0 font-weight-bold"id ="first-box"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold aa">#1 airdrop progress
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold ">73.6%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar background" role="progressbar"
+                                                            style="width: 73%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card shadow  py-2">
+                                <div class="card-body">
+                                    <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                                OP Airdrop Allocation </div>
+                                    <div class="h5 mb-0 font-weight-bold " id="second-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-4">
+                                <div class="card-header shadow ">
+                                    <h6 class=" font-weight-bold aa">Claimer Status</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-pie  justify-content-between" ></div>
+                                    <div id="chart1" style="width: 90%;height:180%;">
+                                    </div>
+                            </div>
+                        </div>
+
+
+
+                    <div class="col-md-6 mb-4">
+                        <div class="row">
+
+                            <!-- -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow  py-2">
+                                    <div class="card-body">
+                                        <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                                Remaining User</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"  id ="third-box" ></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!--  -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card shadow  py-2">
+                                    <div class="card-body">
+                                        <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                                    Total Claimed OP</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800"id ="fourth-box"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="row">
+
+                        <!---->
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow  py-2">
+                                <div class="card-body">
+                                    <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                        Total UnClaimed OP</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"id ="fifth-box"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card shadow  py-2">
+                                <div class="card-body">
+                                    <div class="text-xs font-weight-bold aa" style="text-align: center;">Eligible claimer</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="sixth-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                    <!--  -->
+                    <h1 class="h3 mb-12 mt-5 mb-5" >User Info</h1>
+            </div>
+
+
+
+            <div class="row">
+
+                <!-- -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow  py-2">
+                        <div class="card-body">
+                            <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                Max OP Claimed </div>
+                            <div class="h5 mb-0 font-weight-bold "  id ="seventh-box" ></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="col-md-3 mb-4">
+                    <div class="   py-2">
+                        <div class="card-body">
+                            <div class="text-xs font-weight-bold aa" style="text-align: center;"> </div>
+                                    <div class="h5 mb-0 font-weight-bold"id ="tenth-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-md-3 mb-4">
+                    <div class="   py-2">
+                        <div class="card-body">
+                            <div class="text-xs font-weight-bold aa" style="text-align: center;"> </div>
+                                    <div class="h5 mb-0 font-weight-bold"id ="tenth-box"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- -->
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow  py-2">
+                        <div class="card-body">
+                            <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                                Max OP Claimed (USD)   </div>
+                            <div class="h5 mb-0 font-weight-bold " id="third-box">42.16k</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="row">
+
+            <!-- -->
+            <div class="col-md-3 mb-4">
+                <div class="card shadow  py-2">
+                    <div class="card-body">
+                        <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                            Average OP Claimed </div>
+                        <div class="h5 mb-0 font-weight-bold "  id ="eighth-box" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="col-md-3 mb-4">
+                <div class="card shadow  py-2">
+                    <div class="card-body">
+                        <div class="text-xs font-weight-bold aa" style="text-align: center;">Median OP Claimed</div>
+                                <div class="h5 mb-0 font-weight-bold"id ="ninth-box"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- -->
+            <div class="col-md-3 mb-4">
+                <div class="card shadow  py-2">
+                    <div class="card-body">
+                        <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                            Median OP Claimed(USD)</div>
+                        <div class="h5 mb-0 font-weight-bold " id="eleventh-box">1.2k</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  -->
+            <div class="col-md-3 mb-4">
+                <div class="card shadow  py-2">
+                    <div class="card-body">
+                        <div class="text-xs font-weight-bold aa" style="text-align: center;">
+                            Avg OP Claimed (USD)                        </div>
+                        <div class="h5 mb-0 font-weight-bold " id="twoelvth-box">1.6k</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+                    <div class="row">
+
+                            
+                        <!-- Donut left Chart -->
+                        <div class="col-md-6 mb-4">
+                                <!-- -->
+                                <div class="card-header shadow py-3">
+                                    <h6 class="m-0 font-weight-bold aa">OP Airdrop breakdown</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 justify-content-between" >
+                                       <div id="chart2" style="width: 100%;height:250%;"></div>
+
+                                    </div>
+                                    <hr>
+
+                                    <code></code> 
+                            </div>
+                        </div>
+
+                        <!-- Donut right Chart -->
+                        <div class="col-md-6 mb-4">
+                                <div class="card-header shadow py-3">
+                                    <h6 class="m-0 font-weight-bold aa">OP Airdrop breakdown(USD)</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 justify-content-between" >
+                                       <div id="chart3" style="width: 100%;height:250%;"></div></div>
+                                    <code></code> 
+                                </div>
+                            </div>
+                    </div>
+
+
+                       <!-- Donut left Chart -->
+                       <div class="col-md-6 mb-4">
+                        <!-- -->
+                        <div class="card-header shadow py-3">
+                            <h6 class="m-0 font-weight-bold aa">Claimer Status</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 justify-content-between" >
+                               <div id="chart4" style="width: 100%;height:250%;"></div>
+
+                            </div>
+
+                            <code></code>
+                    </div>
+                </div>
+
+                <!-- Donut right Chart -->
+                <div class="col-md-6 mb-4">
+                        <div class="card-header shadow py-3">
+                            <h6 class="m-0 font-weight-bold aa">OP Token Status</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 justify-content-between" >
+                               <div id="chart5" style="width: 100%;height:250%;"></div></div>
+                            <code></code> 
+                        </div>
+                    </div>
+            </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <div class="footer-basic">
+        <footer >
+            <div class="social">
+                    <a  target="_blank" href="https://github.com/lordking1234"><i class="icon ion-social-github"></i></a>  <!--#change link -->
+                    <a  target="_blank" href="https://twitter.com/MRSoltanii"><i class="icon ion-social-twitter"></i></a>  <!--#change link-->
+                    <a  target="_blank" href="https://www.linkedin.com/in/mohammad-reza-soltani-62009523b/"><i class="icon ion-social-linkedin"></i></a>  <!--#change link-->
+             </div>
+             <ul class="list-inline">
+                    <li class="list-inline-item"><a  target="_blank" href="https://flipsidecrypto.xyz/">Flipside </a></li><!--#change link & text-->
+                    <li class="list-inline-item"><a  target="_blank" href="https://metricsdao.xyz/">Metrics dao</a></li><!--#change link & text-->
+                    <li class="list-inline-item"><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Buy me a coffee 🍵
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><p class="dropdown-item" style="font-weight:bold ; ">Thanks you 💗</p></li>
+                          <li><p class="dropdown-item">
+                            <button onclick="myFunction()" style ="border: none; font-weight:400 ; ">
+                                  Click to copy metamask address <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                    </svg>
+                            </button>
+                        </ul>
+                      </div></li><!--#change link & text-->
+             </ul>
+             <p class="copyright">Built by Lordking 👑</p> <!--#change-->
+        </footer>
+    </div>
+</footer>    
+<!--copy to clipbord-->
+                    <input type="text" value="0x7af2d9a872cbb1bc19fcbd75a4241776ab63dcca" id="myInput" style="visibility :hidden">
+                    <script>
+                                function myFunction() {
+                                var copyText = document.getElementById("myInput");
+                                copyText.select();
+                                copyText.setSelectionRange(0, 99999); 
+                                navigator.clipboard.writeText(copyText.value);
+                                }
+                    </script>
+
+
+
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="airdrop1.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+         <script src="airdrop1.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    
+    
+  </body>
+</html> 
