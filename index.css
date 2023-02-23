@@ -1,6 +1,15 @@
 /*header starts */
-
-
+  .aa {
+    display: inline-block;
+    margin-bottom: 8px;
+    background-image: linear-gradient(270deg, #ff0420, #d9029d);
+    font-family: Rubik, sans-serif;
+    color: transparent;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 .carousel-item {
   height: 65vh;
   min-height: 350px;
